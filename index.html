@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        My family!
+    </title>
+    <link href="https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body style="background-image:linear-gradient(to bottom right,purple,darkblue,lightblue,lightgreen,yellow,orange,red,orange,yellow,lightgreen,lightblue,darkblue,purple);background-repeat: no-repeat;">
+    <center>
+    <h2 class="text-capitalize">my family book</h2>
+    <button onclick="next();"><img src="fam.jfif" id="pic" width="450" class="img-responsive"></button>
+    <br><hr><br>
+    <div>
+    <label id="name">My Family</label>
+    </div>
+    </center>
+</body>
+<script>
+    pics=["me.jfif","mee.jfif","ma.jfif","dad.jfif","fam.jfif"];
+    names=["Devavrat(me)","Me with Raee(my sis)","Vidula(My Mom)","Upendra(My Dad)","My Family"];
+    i=0;
+    function next(){
+        document.getElementById("pic").src=pics[i];
+        document.getElementById("name").innerHTML=names[i];
+        i++;
+        if(i==5){
+            i=0;
+        }
+    }
+</script>
+</html>
